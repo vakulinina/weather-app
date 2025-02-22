@@ -1,0 +1,44 @@
+.forecast {
+  &-day {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    justify-content: space-between;
+    gap: $spacing-md;
+    border-radius: $border-radius;
+    padding: $spacing-sm;
+    background: rgba($white, 0.1);
+    box-sizing: border-box;
+  }
+
+  &-temp {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xs;
+  }
+
+  &-image {
+    width: 100%;
+    max-width: 32px;
+  }
+}
+
+.week-day {
+  margin: 0;
+  font-weight: 600;
+}
+
+@media (max-width: $mobile) {
+  .forecast {
+    &-day {
+      flex-direction: row;
+      width: 100%;
+    }
+
+    &-temp {
+      flex-direction: row;
+    }
+  }
+}

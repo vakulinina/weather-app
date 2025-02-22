@@ -1,0 +1,30 @@
+// Colors
+$primary-color: #190d42;
+$secondary-color: #f2dc6d;
+$text-color: rgba(255, 255, 255, 0.87);
+$white: #fff;
+$gray: #888;
+$error-color: #fc9898;
+
+// Gradients
+$primary-gradient: linear-gradient(
+  145deg,
+  rgba(47, 30, 106, 1) 0%,
+  rgba(25, 13, 66, 1) 34%,
+  rgba(27, 15, 70, 1) 65%,
+  rgba(47, 30, 106, 1) 100%
+);
+
+// Spacing
+$spacing-xs: 5px;
+$spacing-sm: 10px;
+$spacing-md: 15px;
+$spacing-lg: 20px;
+$spacing-xl: 40px;
+
+// Breakpoints
+$mobile-sm: 320px;
+$mobile: 375px;
+
+// Border radius
+$border-radius: 10px;

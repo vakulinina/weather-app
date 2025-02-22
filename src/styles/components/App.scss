@@ -1,0 +1,15 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: $spacing-lg;
+  text-align: center;
+}
+
+.app {
+  margin: $spacing-xl auto $spacing-xl;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: $spacing-lg;
+  max-width: 350px;
+}

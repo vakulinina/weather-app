@@ -1,0 +1,70 @@
+.current-weather {
+  display: flex;
+  box-shadow: 5px 5px 20px rgba($primary-color, 0.1);
+  border-radius: $border-radius;
+  padding: $spacing-lg;
+  justify-content: space-between;
+  background: $primary-gradient;
+
+  &-section {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.title {
+  color: $secondary-color;
+  font-size: 24px;
+}
+
+.temperature {
+  font-size: 32px;
+  font-weight: 600;
+  margin: $spacing-xs 0;
+  white-space: nowrap;
+  color: $white;
+}
+
+.humidity {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+
+  &-caption {
+    font-size: 12px;
+    opacity: 0.5;
+  }
+}
+
+.condition {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.unit-toggle {
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  color: rgba($white, 0.37);
+  cursor: pointer;
+  font-size: 24px;
+
+  p {
+    color: inherit;
+  }
+
+  .active {
+    color: $white;
+  }
+}
+
+@media (max-width: $mobile-sm) {
+  .current-weather {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}

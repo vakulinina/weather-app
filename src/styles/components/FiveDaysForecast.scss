@@ -1,0 +1,23 @@
+.forecast {
+  &-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: $secondary-color;
+    margin-top: 0;
+  }
+
+  &-days {
+    display: flex;
+    justify-content: space-between;
+    gap: $spacing-xs;
+    color: $white;
+  }
+}
+
+@media (max-width: $mobile) {
+  .forecast {
+    &-days {
+      flex-direction: column;
+    }
+  }
+}
