@@ -6,9 +6,13 @@ if (!API_KEY) {
 }
 
 export const getForecast = async (city: string, days = 5) => {
-  const response = await fetch(
-    `${API_BASE_URL}/forecast.json?key=${API_KEY}&q=${city}&days=${days}`
-  )
+  const params = new URLSearchParams({
+    key: API_KEY,
+    q: city,
+    days: days.toString(),
+  })
+
+  const response = await fetch(`${API_BASE_URL}/forecast.json?${params}`)
 
   const data = await response.json()
 
