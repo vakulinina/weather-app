@@ -5,7 +5,7 @@
   }
 
   &-input {
-    background-color: rgba($white, 0.2);
+    background-color: rgba($text-color, 0.2);
     border: none;
     border-top-left-radius: $border-radius;
     border-bottom-left-radius: $border-radius;
@@ -13,11 +13,12 @@
     padding-left: $spacing-sm;
     padding-right: $spacing-sm;
     box-sizing: border-box;
-    color: $white;
     width: 100%;
+    color: $text-color;
+    font-size: $font-size-sm;
 
     &::placeholder {
-      color: $white;
+      color: $text-color;
       opacity: 0.4;
     }
   }
@@ -28,7 +29,7 @@
     border-top-right-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
     height: 40px;
-    background-color: $secondary-color;
+    background-color: $accent-color;
     font-weight: 700;
     color: $primary-color;
     cursor: pointer;
@@ -37,7 +38,7 @@
 
 .error-message {
   color: $error-color;
-  font-size: 12px;
+  font-size: $font-size-xs;
   margin-top: $spacing-sm;
   position: absolute;
   top: 100%;

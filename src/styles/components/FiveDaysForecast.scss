@@ -1,8 +1,8 @@
 .forecast {
   &-title {
-    font-size: 12px;
+    font-size: $font-size-xs;
     font-weight: 700;
-    color: $secondary-color;
+    color: $accent-color;
     margin-top: 0;
   }
 
@@ -10,7 +10,6 @@
     display: flex;
     justify-content: space-between;
     gap: $spacing-xs;
-    color: $white;
   }
 }
 

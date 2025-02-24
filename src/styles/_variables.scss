@@ -1,10 +1,15 @@
 // Colors
 $primary-color: #190d42;
-$secondary-color: #f2dc6d;
-$text-color: rgba(255, 255, 255, 0.87);
-$white: #fff;
-$gray: #888;
+$accent-color: #f2dc6d;
+$text-color: #fff;
 $error-color: #fc9898;
+
+// Font sizes
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 18px;
+$font-size-lg: 24px;
+$font-size-xl: 32px;
 
 // Gradients
 $primary-gradient: linear-gradient(
@@ -28,3 +33,6 @@ $mobile: 375px;
 
 // Border radius
 $border-radius: 10px;
+
+// Box shadow
+$shadow-md: 5px 5px 20px rgb(16, 8, 42);
