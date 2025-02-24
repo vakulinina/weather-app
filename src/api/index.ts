@@ -1,13 +1,16 @@
-const API_KEY = import.meta.env.VITE_API_KEY
 const API_BASE_URL = 'https://api.weatherapi.com/v1'
 
-if (!API_KEY) {
-  throw new Error('API key is not set')
+const getApiKey = () => {
+  const apiKey = import.meta.env.VITE_API_KEY
+  if (!apiKey) {
+    throw new Error('API key is not set')
+  }
+  return apiKey
 }
 
 export const getForecast = async (city: string, days = 5) => {
   const params = new URLSearchParams({
-    key: API_KEY,
+    key: getApiKey(),
     q: city,
     days: days.toString(),
   })
