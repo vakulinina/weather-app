@@ -20,6 +20,14 @@ $primary-gradient: linear-gradient(
   rgba(47, 30, 106, 1) 100%
 );
 
+$primary-gradient-border: linear-gradient(
+  145deg,
+  rgba(77, 60, 136, 1) 0%,
+  rgb(44, 33, 80) 34%,
+  rgb(41, 32, 77) 65%,
+  rgba(77, 60, 136, 1) 100%
+);
+
 // Spacing
 $spacing-xs: 5px;
 $spacing-sm: 10px;
@@ -35,4 +43,4 @@ $mobile: 375px;
 $border-radius: 10px;
 
 // Box shadow
-$shadow-md: 5px 5px 20px rgb(16, 8, 42);
+$shadow-md: 5px 5px 30px rgba(16, 8, 42, 0.834);

@@ -1,6 +1,12 @@
+.current-weather-border {
+  background: $primary-gradient-border;
+  box-shadow: $shadow-md;
+  padding: 1px;
+  border-radius: $border-radius;
+}
+
 .current-weather {
   display: flex;
-  box-shadow: $shadow-md;
   border-radius: $border-radius;
   padding: $spacing-lg;
   justify-content: space-between;
