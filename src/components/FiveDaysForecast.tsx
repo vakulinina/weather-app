@@ -11,7 +11,7 @@ export const FiveDaysForecast = () => {
   return (
     <section aria-label="5-day weather forecast">
       <p className="forecast-title" role="heading" aria-level={2}>
-        5-DAY FORECAST
+        {`${forecast.length}-DAY FORECAST`}
       </p>
       <div className="forecast-days">
         {forecast.map((day) => (
